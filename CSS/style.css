@@ -29,7 +29,7 @@ body {
 #header .header__menu ul {
     list-style: none;
     margin: 5px;
-    padding: 0px;
+    padding: 0px; 
 }
 #header .header__menu ul li {
     display: inline-block;

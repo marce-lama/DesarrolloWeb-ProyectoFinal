@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xbox One</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
@@ -28,7 +29,27 @@
     </div>
     <section class="grid-container">
         <div class="grid-noticias">
-            <img class="desta" src="https://www.somosxbox.com/wp-content/uploads/2022/02/atomicheartthumb-1644277248602-1.jpg" alt="">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.somosxbox.com/wp-content/uploads/2022/02/atomicheartthumb-1644277248602-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.3djuegos.com/juegos/15850/atomic_heart/fotos/maestras/atomic_heart-4035297.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.3djuegos.com/juegos/15850/atomic_heart/fotos/ficha/atomic_heart-5672857.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <h3 class="tituloparrafo">Atomic Heart se retrasa unos meses, pero el heredero de BioShock ya tiene ventana de lanzamiento.<h3>
             <p> Este juego de rol y acción en primera persona llegará más tarde debido a que Atomic Heart ha recibido un retraso de tan solo unos meses. No sólo ha sido esta mala noticia, sino que ahora sabemos que Focus Enterteinment publicará el juego.</p>
         </div>
@@ -70,5 +91,8 @@
         </div>
         <div><p class="copyright"> Gamer Zone - Copyright © Todos los derechos reservados</p></div>
     </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

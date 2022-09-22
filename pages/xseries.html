@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xbox Series</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
@@ -28,7 +29,30 @@
     </div>
     <section class="grid-container">
         <div class="grid-noticias">
-            <img class="desta" src="https://media.minutouno.com/p/08ebd9cb9f99093cddc07a7c3e0e1e10/adjuntos/150/imagenes/040/131/0040131317/nba-2k23.jpg" alt="">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://media.minutouno.com/p/08ebd9cb9f99093cddc07a7c3e0e1e10/adjuntos/150/imagenes/040/131/0040131317/nba-2k23.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.ytimg.com/vi/XsrJoxk70nk/maxresdefault.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://progameguides.com/wp-content/uploads/2022/07/featured-nba-2k23-crossplay.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.somosxbox.com/wp-content/uploads/2020/11/NBA-2K21-Series-X.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <h3 class="tituloparrafo">NBA 2K23 sorprende con el tamaño que ocupará en tu disco duro.</h3>
             <p> Prepárate para hacer hueco a NBA 2K23 en tu disco duro. La precarga en Xbox Series X|S ha desvelado que en la nueva generación de Microsoft necesitará al menos 152 GB de espacio libre, lo que supone casi 40 GB más con respecto a la edición del pasado año.</p>
         </div>
@@ -70,5 +94,7 @@
         </div>
         <div><p class="copyright"> Gamer Zone - Copyright © Todos los derechos reservados</p></div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
