@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
@@ -28,7 +29,27 @@
     </div>
     <section class="grid-container">
         <div class="grid-noticias">
-            <img class="desta" src="https://media.vandal.net/i/1200x630/7-2021/202172220103598_1.jpg" alt="">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://i.ytimg.com/vi/IkK8esLLgyc/maxresdefault.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.ytimg.com/vi/teXh5DKPoS8/maxresdefault.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.mos.cms.futurecdn.net/Ur9MGQoQpn9PrTNxGdS5Zd.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <h3 class="tituloparrafo">El remake de Dead Space revela las tiendas digitales en las que se lanzará en PC y parte de sus requisitos mínimos y recomendados.</h3>
             <p> Cada vez van quedando menos meses para regresar al USG Ishimura con el remake de Dead Space, siendo uno de los primeros juegos que se pondrá a la venta el año que viene. Entre las versiones en las que se lanzará estará la de PC, que es precisamente la protagonista de la noticia de hoy gracias a los nuevos datos que han facilitado Electronic Arts y Motive Studios.</p>
         </div>
@@ -52,25 +73,28 @@
     </section>
     <footer id="footer">
         <nav class="footer__menu">
-            <ul>
-                <li> <a href="./noticias.html">Noticias</a></li>
-                <li> <a href="./ps4.html">PS4</a></li>
-                <li><a href="./ps5.html">PS5</a></li>
-                <li> <a href="./xone.html">XOne</a></li>
-                <li> <a href="./xseries.html">XSeries</a></li>
-                <li> <a href="./pc.html">PC</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li> <a href="./noticias.html">Noticias</a></li>
+                    <li> <a href="./ps4.html">PS4</a></li>
+                    <li><a href="./ps5.html">PS5</a></li>
+                    <li> <a href="./xone.html">XOne</a></li>
+                    <li> <a href="./xseries.html">XSeries</a></li>
+                    <li> <a href="./pc.html">PC</a></li>
+                </ul>
+            </div>
+            <div id="footer-redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Instagram.png" alt=""></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Twitter.png" alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Whatsapp.png" alt=""></a>
+            </div>
         </nav>
-        <div id="footer-redes">
-            <a href="https://es-la.facebook.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Instagram.png" alt=""></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Twitter.png" alt=""></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="redes__sociales" src="../Pictures/Logo-Whatsapp.png" alt=""></a>
-
+        <div class="footer-copyright">
+            <p class="copyright"> Gamer Zone - Copyright © Todos los derechos reservados</p>
         </div>
-        <div><p class="copyright"> Gamer Zone - Copyright © Todos los derechos reservados</p></div>
     </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -107,6 +107,12 @@ body {
     text-align: center;
     margin-bottom: 40px;
 }
+@media (max-width: 576px) {
+    #main .main__titulo {
+        font-size: 40px;
+    }
+
+}
 #main .main__video {
     margin-bottom: 20px;
     text-align: center;
@@ -144,10 +150,25 @@ body {
     gap: 50px;
     padding: 30px;
 }
+@media (max-width: 576px) {
+    .flex-container1 {
+        display: block;
+    }
+    .flex-noti p {
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
 .flex-noti {
     background-color: black;
     width: auto;
     border: 2px solid #eae743;
+}
+@media (max-width: 576px) {
+    .flex-noti {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
 }
 .flex-noti img{
     width: 100%;
@@ -176,7 +197,29 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    display: inline-block
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width: 576px) {
+    #footer .footer__menu {
+        display: inline;
+    }
+    #footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer .footer-redes {
+        margin: 0 auto;
+    }
+}
+
+#footer .footer__menu li {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 #footer .footer__menu li a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -186,22 +229,33 @@ body {
     padding: 2px;
     color: blueviolet;
 }
+#footer .footer-copyright {
+    width: 100%;
+    margin-top: 40px;
+    background-color: blueviolet;
+}
+
 #footer .copyright {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    color: blueviolet;
+    color: #eae743;
+    padding: 10px;
 }
 
 /* style redes sociales */
+#footer-redes {
+    margin-top: auto;
+}
+
 #footer-redes .redes__sociales  {
     width: 40px;
     height: auto;   
     position: relative;
     float: right;
-    bottom: 20px;
+    bottom: 5px;
     padding-right: 10px;
-    margin: 2px;
+    margin-top: auto;
 }
 
 /* style titulo de las pages */
@@ -236,7 +290,7 @@ body {
 }
 @media (max-width: 576px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        display: block;
     }
 }
 .grid-noticias .desta {
