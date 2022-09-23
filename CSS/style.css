@@ -6,43 +6,42 @@
 body {
     background-color: black !important;
 }
-#header {
+#encabezado {
     background-image: url(https://media.istockphoto.com/photos/old-black-shabby-brick-wall-wide-panoramic-texture-dark-grey-rough-picture-id1326917283?b=1&k=6&m=1326917283&s=170667a&w=0&h=z8TPcC0YbGhc8jlrbRHSJbO4KFnb2Z_GkOekdzXefrM=);
     /*background-color: black;*/
     background-position: center;
 }
-
 /* Logo / Titulo / Menu */
-#header .header__logo {
+#encabezado .encabezado__logo {
     width: 100px;
     height: auto;
     margin-top: 10px;
 }
 @media (max-width: 576px) {
-    #header .header__logo {
+    #encabezado .encabezado__logo {
         display: block;
         margin: auto;
     }
 }   
-#header .header__menu {
+#encabezado .encabezado__menu {
     background-color: blueviolet;
 }
-#header .header__menu ul {
+#encabezado .encabezado__menu ul {
     list-style: none;
     margin: 5px;
     padding: 0px; 
 }
-#header .header__menu ul li {
+#encabezado .encabezado__menu ul li {
     display: inline-block;
 }
 
 @media (max-width: 576px) {
-    #header .header__menu ul li {
+    #encabezado .encabezado__menu ul li {
         display: block;
         text-align: center;
     }
 }
-#header .header__menu ul li a {
+#encabezado .encabezado__menu ul li a {
     color: #eae743;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -50,12 +49,12 @@ body {
     display: block;
     padding: 10px 86px;
 }
-#header .header__menu ul li a:hover {
+#encabezado .encabezado__menu ul li a:hover {
     background-color: black;
 }
 
 /* Menu de videos */
-.parrafo-lanzamientos {
+.noti-lanzamientos {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #eae743;
     font-size: 30px;
@@ -64,28 +63,28 @@ body {
     margin-bottom: 10px;
 }
 @media (max-width: 576px) {
-    .parrafo-lanzamientos {
+    .noti-lanzamientos {
         display: none;
     }
 }
-.flex-container {
+.contenedor-videos-flex {
     display: flex;
     padding: 10px;
     gap: 10px;
     margin-bottom: 40px;
 }
 @media (max-width: 576px) {
-    .flex-container {
+    .contenedor-videos-flex {
         display: none;
     }
 }
 
-.flex-item iframe{
+.item-flex iframe{
     width: 100%;
     height: auto;
     border: 2px #eae743 solid;
 }
-.flex-item p {
+.item-flex p {
     color: #eae743;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -94,14 +93,14 @@ body {
 }
 
 /* style video principal de youtube */
-#main {
+#principal {
     margin: 5px;
     padding: 0px;
 }
-#main .flex-main {
+#principal .principal-flex {
     display: flex;
 }
-#main .main__titulo {
+#principal .principal-titulo {
     color: #eae743;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
@@ -109,30 +108,24 @@ body {
     margin-bottom: 40px;
 }
 @media (max-width: 576px) {
-    #main .main__titulo {
+    #principal .principal-titulo {
         font-size: 40px;
     }
 }
-#main .main__img {
+#principal .principal-imagen {
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
     height: auto;
 }
-#main .main__img img {
+#principal .principal-imagen img {
     width: 80%;
-}
-@media (max-width: 576px) {
-    #main .main__video {
-        width: 550px;
-        height: 250px;
-    }
 } 
-#main .flex-main-iframe {
+#principal .flex-main-iframe {
     width: 60%;
     height: 100%;
 }
-#main .main__parrafo {
+#principal .principal-parrafo {
     background-color: blueviolet;
    color: #eae743;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -154,37 +147,37 @@ body {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.flex-container1 {
+.contenedor-noticias-seg {
     background-color: blueviolet;
     display: flex;
     gap: 50px;
     padding: 30px;
 }
 @media (max-width: 576px) {
-    .flex-container1 {
+    .contenedor-noticias-seg {
         display: block;
     }
-    .flex-noti p {
+    .noticia-seg p {
        margin-left: auto;
        margin-right: auto;
     }
 }
-.flex-noti {
+.noticia-seg {
     background-color: black;
     width: auto;
     border: 2px solid #eae743;
 }
 @media (max-width: 576px) {
-    .flex-noti {
+    .noticia-seg {
         margin-bottom: 15px;
         margin-top: 15px;
     }
 }
-.flex-noti img{
+.noticia-seg img{
     width: 100%;
     max-height: 385.42px;  
 }
-.flex-noti p {
+.noticia-seg p {
     color: #eae743;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -192,17 +185,17 @@ body {
     max-width: 400px;
     padding: 5px;
 }
-.flex-noti a {
+.noticia-seg a {
     text-decoration: none;
 }
 
 /* style del footer - pie de pagina */
-#footer {
+#pie-pagina {
     background-color: #eae743;
     height: auto;
     margin-top: 60px;
 }
-#footer .footer__menu {
+#pie-pagina .pie-pagina-menu {
     list-style: none;
     padding-top: 10px;
     padding-left: 10px;
@@ -212,19 +205,19 @@ body {
     width: 100%;
 }
 @media (max-width: 576px) {
-    #footer .footer__menu {
+    #pie-pagina .pie-pagina-menu {
         display: inline;
         text-align: center;
     }
 }
-#footer .footer__menu li {
+#pie-pagina .pie-pagina-menu li {
     list-style: none;
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     display: inline-block;
 }
-#footer .footer__menu li a {
+#pie-pagina .pie-pagina-menu li a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     text-decoration: none;
@@ -232,13 +225,13 @@ body {
     padding: 2px;
     color: blueviolet;
 }
-#footer .footer-copyright {
+#pie-pagina .pie-pagina-copyright {
     width: 100%;
     margin-top: 40px;
     background-color: blueviolet;
 }
 
-#footer .copyright {
+#pie-pagina .copyright {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
@@ -247,7 +240,7 @@ body {
 }
 
 /* style redes sociales */
-.footer-redes .redes__sociales  {
+.pie-pagina-redes .redes-sociales-logo  {
     width: 40px;
     height: auto;   
     position: relative;
@@ -256,12 +249,12 @@ body {
     padding-right: 10px;
     margin-top: auto;
 }
-.footer-redes {
+.pie-pagina-redes {
     margin-top: auto;
     margin-bottom: auto;
 }
 @media (max-width: 576px) {
-    .footer-redes {
+    .pie-pagina-redes {
         display: flex;
         justify-content: center;
         margin-top: 30px;
@@ -269,7 +262,7 @@ body {
 }
 
 /* style titulo de las pages */
-#h2__titular {
+#titulo-pagina {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     color: #eae743;
@@ -278,7 +271,7 @@ body {
 }
 
 /* Page - Noticias */
-.grid-container {
+.contenedor-grid {
     background-color: #eae743;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -288,46 +281,47 @@ body {
     margin-top: 20px;
     text-align: center;
 }
-.grid-container .grid-noticias {
+.contenedor-grid .noticias-grid {
     background-color: blueviolet;
     padding: 10px;
 }
 
 /* grid de notocia destacada */
-.grid-container .grid-noticias:nth-child(1) {
+.contenedor-grid .noticias-grid:nth-child(1) {
     grid-column: 1/3;
     grid-row: 1/3;
 }
 @media (max-width: 576px) {
-    .grid-container {
+    .contenedor-grid {
         display: block;
     }
 }
-.grid-noticias .desta {
+.noticias-grid .desta {
     width: 100%;
     height: auto;
 }
 
 /* grid resto de las noticias */
-.grid-noticias img {
+.noticias-grid img {
     width: 100%;
     height: auto;
     border: 6px black solid;
     margin-top: 20px;
 }
-.grid-container .tituloparrafo {
+.contenedor-grid .titulo-parrafo {
     color: #eae743;
     font-size: 45px;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.grid-container .tituloparrafosec {
+.contenedor-grid .titulo-parrafosec {
     color: #eae743;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     margin-top: 25px;
 }
-.grid-noticias p {
+
+.noticias-grid p {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
