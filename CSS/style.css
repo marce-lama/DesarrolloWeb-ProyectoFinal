@@ -282,9 +282,10 @@ body {
 #titulo-pagina {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
-    color: #eae743;
+    color: blueviolet;
     text-align: center;
     margin-top: 20px;
+    background-color: #eae743;
 }
 
 /* Page - Noticias */
@@ -345,5 +346,45 @@ body {
     font-size: 20px;
     max-width: 990px;
     text-align: center;
+}
+/* Stilo de grillas */
+
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.grid-juego {
+    margin-bottom: -50px;
+    border: white solid 4px;
+    border-radius: 25px;
+    transition: all 0.5s;
+    background-color: blueviolet;
+}
+.grid-juego img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    max-height: 259px;
+}
+.grid-juego:hover {
+    transform: scale(1.1);
+}
+.grid-catalogo h6 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0%;
+    color: #eae743;
+    margin-top: 10px;
+}
+.grid-catalogo .precio {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    margin-top: 15px;
 }
 
