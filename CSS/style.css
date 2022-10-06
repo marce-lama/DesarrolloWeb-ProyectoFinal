@@ -25,6 +25,7 @@ body {
 }   
 #encabezado .encabezado__menu {
     background-color: blueviolet;
+    text-align: center;
 }
 #encabezado .encabezado__menu ul {
     list-style: none;
