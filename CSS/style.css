@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black !important;
+    background-color: black;
 }
 #encabezado {
     background-image: url(https://media.istockphoto.com/photos/old-black-shabby-brick-wall-wide-panoramic-texture-dark-grey-rough-picture-id1326917283?b=1&k=6&m=1326917283&s=170667a&w=0&h=z8TPcC0YbGhc8jlrbRHSJbO4KFnb2Z_GkOekdzXefrM=);
@@ -19,16 +19,23 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
+
 @media (max-width: 576px) {
     #encabezado .encabezado__logo {
         display: block;
-        margin: auto;
+        margin: auto; 
     }
 }   
 #encabezado .encabezado__menu {
     background-color: blueviolet;
     text-align: center;
 }
+
+@media(max-width: 576px) {
+    #encabezado .encabezado__menu {
+        margin-top: 50px;
+    }
+} 
 #encabezado .encabezado__menu ul {
     list-style: none;
     margin: 5px;
@@ -566,10 +573,33 @@ body header .barra-buscar input {
 
 }
 .barra-buscar .icono-lupa {
-    position: absolute;
+    position:relative;
     width: 45px;
-    top: 2px;
-    right: 5px;
+    top: -43px;
+    right: -310px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    body header .barra-buscar {
+        margin-top: 40px;
+        left: 50px;
+    }
+}
+@media (max-width: 576px) {
+    body header .barra-buscar input {
+        position: relative;
+        width: 250px;
+        height: 30px;
+        font-size: 16px ;
+        margin-left: 95px;
+    }
+}
+@media(max-width: 576px) {
+    .barra-buscar .icono-lupa {
+        width: 35px;
+        margin-right: 135px;
+        margin-top: 10px;
+    }
 }
