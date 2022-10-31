@@ -12,6 +12,10 @@ body {
     background-position: center;
 }
 /* Logo / Titulo / Menu */
+#encabezado .contenedor__encabezado {
+    text-align: center;
+}
+
 #encabezado .encabezado__logo {
     width: 100px;
     height: auto;
@@ -24,6 +28,7 @@ body {
     #encabezado .encabezado__logo {
         display: block;
         margin: auto; 
+        margin-top: 5px;
     }
 }   
 #encabezado .encabezado__menu {
@@ -33,7 +38,7 @@ body {
 
 @media(max-width: 576px) {
     #encabezado .encabezado__menu {
-        margin-top: 50px;
+        margin-top: 10px;
     }
 } 
 #encabezado .encabezado__menu ul {
@@ -551,66 +556,23 @@ section .formulario .button input:hover {
     color: blueviolet;
 }
 
-/* barra buscar */
-
-body #encabezado .contenedor__encabezado {
-    display: flex;
-    gap: 800px;
+body header .barra-buscar-texto {
+    text-align: center;
 }
 
-@media(max-width: 576px) {
-    body #encabezado .contenedor__encabezado {
-        display: block;
-    }
-}
-
-body #encabezado .contenedor__encabezado .barra-buscar{
-    /*margin-top: 70px;*/
-    margin-top: auto;
-}
-
-@media(max-width: 576px) {
-    body #encabezado .contenedor__encabezado .barra-buscar {
-        margin:auto;
-        margin-left: 125px;
-        
-    }
-}
-@media(max-width: 576px) {
-    body #encabezado .encabezado__fondo {
-        margin-bottom: 5px;
+@media(max-width:576px) {
+    body header .barra-buscar-texto {
         margin-top: 5px;
     }
 }
-body #encabezado .barra-buscar-texto {
-    float: left;
-}
-body #encabezado .boton-lupa {
-    float: left;
-}
-body #encabezado .barra-buscar-texto input {
+
+body header .barra-buscar-texto input {
     background-color: #eae743;
-    width: 350px;
+    width: 345px;
     height: 40px;
-    padding: 0 20px;
     font-size: 18px;
+    padding: 0 20px;
     outline: none;
     border: 2px solid blueviolet;
     border-radius: 20px;
-    color: blueviolet; 
-}
-@media(max-width: 576px) {
-    body #encabezado .barra-buscar-texto input {
-       width: 300px;
-       height: 35px;
-       font-size: 16px; 
-    }
-}
-body #encabezado .icono-lupa {
-    width: 45px;
-}
-@media(max-width: 576px) {
-    body #encabezado .icono-lupa {
-        width: 35px;
-    }
 }
