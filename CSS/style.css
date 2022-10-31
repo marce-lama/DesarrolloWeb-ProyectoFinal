@@ -555,7 +555,7 @@ section .formulario .button input:hover {
 
 body #encabezado .contenedor__encabezado {
     display: flex;
-    gap: 830px;;
+    gap: 800px;
 }
 
 @media(max-width: 576px) {
@@ -565,16 +565,17 @@ body #encabezado .contenedor__encabezado {
 }
 
 body #encabezado .contenedor__encabezado .barra-buscar{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
+    margin-top: auto;
 }
 
 @media(max-width: 576px) {
     body #encabezado .contenedor__encabezado .barra-buscar {
         margin:auto;
-        margin-left: 50px;
+        margin-left: 125px;
+        
     }
 }
-
 @media(max-width: 576px) {
     body #encabezado .encabezado__fondo {
         margin-bottom: 5px;
@@ -598,6 +599,18 @@ body #encabezado .barra-buscar-texto input {
     border-radius: 20px;
     color: blueviolet; 
 }
+@media(max-width: 576px) {
+    body #encabezado .barra-buscar-texto input {
+       width: 300px;
+       height: 35px;
+       font-size: 16px; 
+    }
+}
 body #encabezado .icono-lupa {
     width: 45px;
+}
+@media(max-width: 576px) {
+    body #encabezado .icono-lupa {
+        width: 35px;
+    }
 }
