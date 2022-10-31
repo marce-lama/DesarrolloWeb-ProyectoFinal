@@ -127,7 +127,7 @@ body {
 #principal .principal-imagen img {
     width: 80%;
     border: 4px solid #eae743;
-    border-radius: 50px;
+    border-radius: 20px;
 } 
 @media (max-width: 576px) {
     #principal .principal-imagen img {
@@ -147,7 +147,7 @@ body {
    margin-left: auto;
    margin-right: auto;
    border: blueviolet solid 4px;
-   border-radius: 25px;
+   border-radius: 10px;
 }
 @media (max-width: 576px) {
     #principal .principal-parrafo {
@@ -447,6 +447,7 @@ article .imagen-noticia {
     height: auto;
     text-align: center;
     width: 100%;
+    border-radius: 15px;
 }
 
 article .p1 {
@@ -459,12 +460,18 @@ article .p1 {
     margin-right: auto;
     padding: 20px;
     background-color: blueviolet;
+    border-radius: 15px;
 }
 .sucursales-contenedor-grid {
     display: flex;
     padding: auto;
     gap: 20px;
     margin-top: 20px;
+}
+@media (max-width: 576px) {
+    .sucursales-contenedor-grid {
+        display: block;
+    }
 }
 .sucursales-contenedor-grid .sucursales-GZ {
     margin-left: auto;
@@ -479,11 +486,15 @@ article .p1 {
 }
 .sucursales-contenedor-grid .sucursales-GZ p {
     font-size: 15px;
-    text-align: justify;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #eae743;
 }
-
+@media (max-width: 576px) {
+    .sucursales-contenedor-grid .sucursales-GZ p {
+       text-align: center
+    }
+}
 .sucursales-contenedor-grid .sucursales-GZ iframe {
     margin-top: 20px;
 }
@@ -503,6 +514,11 @@ section .section-formulario {
     margin-top: 20px;
     border-radius: 4px;
 }
+@media (max-width: 576px) {
+    section .section-formulario {
+        width: 90%;
+    }
+}
 
 section .formulario input {
     background-color:#eae743;
@@ -519,4 +535,9 @@ section .formulario .button input {
     background-color: blueviolet;
     border: solid 4px #eae743;
     color: #eae743;
+}
+section .formulario .button input:hover {
+    cursor: pointer;
+    background-color: black ;
+    color: blueviolet;
 }
