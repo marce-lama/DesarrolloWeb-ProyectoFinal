@@ -16,6 +16,8 @@ body {
     width: 100px;
     height: auto;
     margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 @media (max-width: 576px) {
     #encabezado .encabezado__logo {
@@ -540,4 +542,34 @@ section .formulario .button input:hover {
     cursor: pointer;
     background-color: black ;
     color: blueviolet;
+}
+
+/* barra buscar */
+
+body header .barra-buscar {
+    position:absolute;
+    padding: 5px;
+    top: 65px;
+    right: 20px;
+}
+
+body header .barra-buscar input {
+    background-color: #eae743;
+    width: 350px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: blueviolet;
+    outline: none;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+
+}
+.barra-buscar .icono-lupa {
+    position: absolute;
+    width: 45px;
+    top: 2px;
+    right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
 }
