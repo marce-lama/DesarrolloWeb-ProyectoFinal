@@ -553,53 +553,51 @@ section .formulario .button input:hover {
 
 /* barra buscar */
 
-body header .barra-buscar {
-    position:absolute;
-    padding: 5px;
-    top: 65px;
-    right: 20px;
+body #encabezado .contenedor__encabezado {
+    display: flex;
+    gap: 830px;;
 }
 
-body header .barra-buscar input {
+@media(max-width: 576px) {
+    body #encabezado .contenedor__encabezado {
+        display: block;
+    }
+}
+
+body #encabezado .contenedor__encabezado .barra-buscar{
+    margin-top: 70px;
+}
+
+@media(max-width: 576px) {
+    body #encabezado .contenedor__encabezado .barra-buscar {
+        margin:auto;
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 576px) {
+    body #encabezado .encabezado__fondo {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+body #encabezado .barra-buscar-texto {
+    float: left;
+}
+body #encabezado .boton-lupa {
+    float: left;
+}
+body #encabezado .barra-buscar-texto input {
     background-color: #eae743;
     width: 350px;
     height: 40px;
     padding: 0 20px;
     font-size: 18px;
-    color: blueviolet;
     outline: none;
     border: 2px solid blueviolet;
     border-radius: 20px;
-
+    color: blueviolet; 
 }
-.barra-buscar .icono-lupa {
-    position:relative;
+body #encabezado .icono-lupa {
     width: 45px;
-    top: -43px;
-    right: -310px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-@media (max-width: 576px) {
-    body header .barra-buscar {
-        margin-top: 40px;
-        left: 50px;
-    }
-}
-@media (max-width: 576px) {
-    body header .barra-buscar input {
-        position: relative;
-        width: 250px;
-        height: 30px;
-        font-size: 16px ;
-        margin-left: 95px;
-    }
-}
-@media(max-width: 576px) {
-    .barra-buscar .icono-lupa {
-        width: 35px;
-        margin-right: 135px;
-        margin-top: 10px;
-    }
 }
